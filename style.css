@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: #f7d794;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background: #3498db;
+    padding: 25px 20px;
+    text-align: center;
+    width: 347px;
+    border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+  border-radius: 5px;
+}
+
+.card-title h1 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .default-p{
+    flex-basis: 58%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+}
+#guessingGame {
+    flex-basis: 40%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: #29668e;
+    padding: 2px 8px;
+    color:#fff;
+}
+.button-div {
+    text-align: right;
+    margin-top: 7px;
+    margin-bottom: 14px;
+}
+#check-btn {
+    display: inline-block;
+    background: #8e44ad;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 2px 5px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.required-result {
+    margin-bottom: 5px;
+}
+
+.won-lost {
+    font-size: 18px;
+}
+
+/* ===========Media Query=============== */
+
+@media only screen and (max-width: 600px) {
+    .input-box {
+        flex-direction: column;
+    }
+
+    .default-p {
+        flex-basis: 58%;
+    }
+
+    #guessingGame {
+     width: 50%;
+    }
+
+    .button-div {
+        text-align: center;
+    }
+
+
+
+  }

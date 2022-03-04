@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-title">
+                <h1>Guessing Game</h1>
+            </div>
+            <div class="card-body">
+    
+                <form action="#">
+                    <div class="input-box">
+                        <label for="guessingGame" id="label" class="default-p">Enter Guess between 1-5 :</label>
+                    <input type="number" id="guessingGame" min="1" max="5" required>
+                    </div>
+                    
+                    <div class="button-div">
+                        <button type="submit" id="check-btn">Check result</button>
+                    </div>
+                   
+                </form>
+
+                <div class="result-div"> 
+
+                    <p class="required-result default-p" ></p>
+                    <p class="remaining-attempt default-p"></p>
+                    <h5 class="won-lost"></h5>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="js/custom.js"></script>
+
+</body>
+</html>
